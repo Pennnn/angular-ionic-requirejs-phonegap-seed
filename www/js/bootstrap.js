@@ -15,6 +15,7 @@ define(['ionic', 'angular', 'app', 'routes'], function (ionic, angular, app) {
         angular.element().ready(function () {
             try {
                 angular.bootstrap(document, [app.name]);
+                angular.resumeBootstrap();
             } catch (e) {
                 console.error(e.stack || e.message || e);
             }
